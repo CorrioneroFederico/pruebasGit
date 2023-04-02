@@ -27,3 +27,6 @@ checkout Y: te mueves entre commits (checkout maseter: vuelve al ultimo commit h
 
 pull: es igual que "fetch" + "merge". Trae los cambios del repositorio remoto al directorio y repositorio locales.
 push: envía los cambios al repositorio remoto.
+
+Ramas:
+branch: crea una rama a partir del lugar donde estoy parado (HEAD)
