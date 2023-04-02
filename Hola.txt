@@ -10,8 +10,17 @@ git push: enviar commits a github
 
 Clase 12:
 reset Y: vuelve a un estado Y
-    hard: vuelve todo al estado señalado
-    soft: conserva en staging los archivos agregados, volves a la version anterior, pero lo que pusiste en "add" sigue ahi, disponible para el proximo "commit"
-        el directorio de trabajo vuelve a una version anterior señalada.
-    Es muy "peligroso" ya que borra todo lo hecho posteriormente desde el "commit" que se vuelve.
+    --soft: Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging,
+            así podemos aplicar las últimas actualizaciones a un nuevo commit.
+    
+    --hard: Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del área de staging se borra del historial.
+    
+    HEAD: Este es el comando para sacar archivos del área de staging. No para borrarlos ni nada de eso,
+            solo para que los últimos cambios de estos archivos no se envíen al último commit,
+            a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add, por supuesto.
 
+    Es muy "peligroso" ya que borra todo lo hecho posteriormente desde el "commit" que se vuelve.
+    Este comando nos ayuda a volver en el tiempo. Pero no como git checkout que nos deja ir, mirar, pasear y volver.
+    Con git reset volvemos al pasado sin la posibilidad de volver al futuro. Borramos la historia y la debemos sobreescribir. No hay vuelta atrás.
+
+checkout Y: te mueves entre commits (checkout maseter: vuelve al ultimo commit hecho)
