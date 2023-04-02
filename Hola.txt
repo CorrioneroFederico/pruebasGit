@@ -1,3 +1,7 @@
-Linea 1
-linea 2
-linea 3
+init: crea el repo
+add x: agrega archivos al staging
+commit: agrega los archivos en el staging al repo
+status: meutras estado de archivos (rojo en working directory - verde en staging)
+show: muestra cambios historicos
+log: muestra historial de commits con distintos datos
+git push: enviar commits a github
