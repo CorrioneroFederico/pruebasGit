@@ -5,3 +5,13 @@ status: meutras estado de archivos (rojo en working directory - verde en staging
 show: muestra cambios historicos
 log: muestra historial de commits con distintos datos
 git push: enviar commits a github
+
+(staging: en memoria, posteriormente pasa al repo)
+
+Clase 12:
+reset Y: vuelve a un estado Y
+    hard: vuelve todo al estado señalado
+    soft: conserva en staging los archivos agregados, volves a la version anterior, pero lo que pusiste en "add" sigue ahi, disponible para el proximo "commit"
+        el directorio de trabajo vuelve a una version anterior señalada.
+    Es muy "peligroso" ya que borra todo lo hecho posteriormente desde el "commit" que se vuelve.
+
