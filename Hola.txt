@@ -43,3 +43,22 @@ merge Z: el merge se debe realizar sobre la rama en la cual quiero traer los cam
 Conflictos:
 cuando tengo conflictos durante el merge, debo solucionarlos, elijo la opcion de arriba (rama donde estoy parado) o la de abajo (los cambios de la otra rama),
 que serian los q vienen.
+
+
+Push:
+para subir a un repositorio lo primero a hacer es (aparte de tener el repositorio) introducir el comando
+
+remote add origin "url": asi, vinculamos nuestro local al repositorio creado en github
+
+para verificar q esta correcto usamos "remote -v", ahora solo queda subirlo con:
+(antes de hacerlo, en este ejemplo cambio el nombre de "master" a "main" con el comando "branch -m main")
+push origin main: esto subira el proyecto junto con todas las ramas creadas de manera local.
+
+EN EL REMOTO CASO, de que ya haya contenido por primera vez, debemos traernos lo que haya con un pull con el comando:
+
+pull origin main: de esta manera nos traemos los cambios o lo q haya en el repo remoto al local
+    origin: es el nombre del repositorio remoto
+    main: la rama actual (la rama con la cual voy a fucionar lo q traiga de origin)
+
+
+
