@@ -24,3 +24,6 @@ reset Y: vuelve a un estado Y
     Con git reset volvemos al pasado sin la posibilidad de volver al futuro. Borramos la historia y la debemos sobreescribir. No hay vuelta atrás.
 
 checkout Y: te mueves entre commits (checkout maseter: vuelve al ultimo commit hecho)
+
+pull: es igual que "fetch" + "merge". Trae los cambios del repositorio remoto al directorio y repositorio locales.
+push: envía los cambios al repositorio remoto.
