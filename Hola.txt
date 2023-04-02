@@ -30,3 +30,8 @@ push: envía los cambios al repositorio remoto.
 
 Ramas:
 branch: crea una rama a partir del lugar donde estoy parado (HEAD)
+checkout Z: me muevo a la rama Z
+
+X: archivo
+Y: directorio o commit
+Z: nombre rama
