@@ -35,3 +35,8 @@ checkout Z: me muevo a la rama Z
 X: archivo
 Y: directorio o commit
 Z: nombre rama
+
+merge Z: el merge se debe realizar sobre la rama en la cual quiero traer los cambios a fusionar.
+        por ejemplo, si estoy en master (rama principal), y quiero traer (fusionar) la "nueva_rama", solo hago un merge
+        desde la rama donde estoy, y pongo la rama que quiero traer: "git merge nueva_rama" (con HEAD en master)
+
