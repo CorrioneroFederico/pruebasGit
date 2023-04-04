@@ -98,3 +98,4 @@ git stash branch z: donde z es el nombre de la NUEVA rama y con los cambios del 
 - para borrar un stash:
 git stash drop: borra todo lo que hay en el stash, TODO, no un stash
 
+estoy poniendo esto para probar los conflictos
