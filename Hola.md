@@ -25,7 +25,7 @@ reset Y: vuelve a un estado Y
     Este comando nos ayuda a volver en el tiempo. Pero no como git checkout que nos deja ir, mirar, pasear y volver.
     Con git reset volvemos al pasado sin la posibilidad de volver al futuro. Borramos la historia y la debemos sobreescribir. No hay vuelta atrás.
 
-- checkout Y: te mueves entre commits (checkout maseter: vuelve al ultimo commit hecho)
+- checkout Y: te mueves entre commits (checkout master: vuelve al ultimo commit hecho)
 
 -pull: es igual que "fetch" + "merge". Trae los cambios del repositorio remoto al directorio y repositorio locales.
 -push: envía los cambios al repositorio remoto.
@@ -109,3 +109,19 @@ estas en la rama x, te fijas con "log" el numero, copias, te mueves a la rama pr
 # ES MUCHO MEJOR HACER EL TRABAJO DURO Y HACERLO CON UN MERGE, O CON UN CHECKOUT PARA VER COMO QUEDO
 # Y LUEGO UN CHECKOUT AL HEAD
 - En conlcucion, para mi, se usa cuando es un cambio chico q vale la pena traer, sin necesidad de un merge.
+
+
+_* reset *_
+Cuando hicimos cagada con varios commits, pusheos y demas, podemos hacer un reset --soft o --hard.
+        --soft: conserva lo que hay en el staging
+        --hard: borra todo desde el punto que vos queres, desde el numero del commit
+Ejemplo: hay 3 commits, un borrado, un merge, 2 commits...y queremos volver al segundo commit de los primeros 3
+entonces hay q buscar el numero de ese commit con "log", copiar ese numero e introducir el comando
+- git reset --hard #numero
+esto nos va a traer al momento de ese commit, perdiendo TODO lo que vino despues (ojo)
+
+_*ESTO ES SOLO NECESARIO COMO ULTIMO RECUERSO, CUANDO ALGO SE ROMPIÓ, ES MALA PRACTICA*_
+
+_* --AMEND*_
+con este comando junto el nuevo commit q vaya a hacer con el anterior, puedo renombrar incluso para q sea
+solo un commit (parecido al sqash pero con los ultimos 2 commits)
