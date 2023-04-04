@@ -98,3 +98,11 @@ git stash branch z: donde z es el nombre de la NUEVA rama y con los cambios del 
 - para borrar un stash:
 git stash drop: borra todo lo que hay en el stash, TODO, no un stash
 
+_* cherrypick*_
+Con "cherry-pick", lo que haces es traerte a la rama, el commit que vos queres especificamente.
+Si tenes una rama con 3 commits, y vos queres en la rama principal el segundo, solo basta con
+- git cherry-pick "numero del commit"
+tener en cuenta que para saber el numero del commite hay que verlo en la rama en la que lo trabajaste, o sea
+estas en la rama x, te fijas con "log" el numero, copias, te mueves a la rama principal, y haces el cherry-pick con ese numero
+
+mmmm
