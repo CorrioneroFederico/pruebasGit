@@ -66,3 +66,18 @@ EN EL REMOTO CASO, de que ya haya contenido por primera vez, debemos traernos lo
 
 
 // Lo recomendado es traer siempre con un pull antes de hacer un push
+
+*Rebase*
+El rebase es basicamente: tengo una rama con errores, creo una rama a partir de esa para solucionar los errores.
+el objetivo o lo que se busca es, solucionar esos errores, y una vez solcuionados se quiere agregar todos los
+commits hechos en esa nueva rama a la rama de la cual partiste (NUNCA HACERLO EN LA RAMA PRINCIPAL, ES MALA PRACTICA).
+
+para acer un rebase me tengo que colocar en la rama nueva, y ejecutar el comando
+git rebase Z
+donde Z es la rama a la cual le voy a pegar la historia de la nueva rama con los fixes.
+
+El rebase, coloca los cambios realizados (o lo que tienes en la rama fix), al final de la rama de la cual partiste.
+Entonces, podes tener en fix 3 commits, y en la rama de la cual partiste tenes 4 nuevos commits. Cuando realizas el rebase
+los 3 commits de fix van a ir al final de la rama origen (de la cual partiste).
+
+
