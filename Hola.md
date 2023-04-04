@@ -38,7 +38,7 @@ X: archivo
 Y: directorio o commit
 Z: nombre rama
 
-Podemos usar un atajo para crear y movernos a esa nueva rama con el comando "checkout -b Z"
+Podemos usar un atajo para crear y movernos a esa nueva rama con el comando _*"checkout -b Z"*_
 
 *merge* Z: el merge se debe realizar sobre la rama en la cual quiero traer los cambios a fusionar.
         por ejemplo, si estoy en master (rama principal), y quiero traer (fusionar) la "nueva_rama", solo hago un merge
