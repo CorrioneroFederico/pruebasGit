@@ -21,3 +21,6 @@ Lo que hago acá es para pushear la nueva rama al repositorio remoto.
 para eso debo poner:
 
 push origin nueva_rama
+
+
+_* Trabajo en otra rama para seguir practicando merge y otras cosas*_

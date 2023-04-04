@@ -86,3 +86,15 @@ los 3 commits de fix van a ir al final de la rama origen (de la cual partiste).
 ## REBASE PRIMERO A DND HUBO LOS CAMBIOS QUE QUEREMOS MODIFICAR Y LUEGO REBASE A LA RAMA FINAL.
 
 
+_*Stach*_
+- El stash sirve para guardar cambios que haya hecho sin hacer commits, cuando tengo cambios y no quiero
+- commitear, hago un stash y me va a guardar esos cambios, y el archivo me va a mostrar todo como estaba
+- antes de haber hecho esos cambios, como si nunca los hubiera hecho.
+
+_* TIP-ASO *_
+- SI YO QUIERO GUARDAR ALGO, EN UN STASH Y PONERLO EN OTRA ROMA, EL COMANDO A USAR ESO:
+git stash branch z: donde z es el nombre de la NUEVA rama y con los cambios del stash.
+
+- para borrar un stash:
+git stash drop: borra todo lo que hay en el stash, TODO, no un stash
+
