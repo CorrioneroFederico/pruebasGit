@@ -75,9 +75,14 @@ commits hechos en esa nueva rama a la rama de la cual partiste (NUNCA HACERLO EN
 para acer un rebase me tengo que colocar en la rama nueva, y ejecutar el comando
 git rebase Z
 donde Z es la rama a la cual le voy a pegar la historia de la nueva rama con los fixes.
+si estoy en la rama "experimento" y ejecuto el rebase de master,
+- ME TRAE TODO LO DE MASTER Y LO UBICA AL FINAL DE LA RAMA EXPERIMENTOS
 
 El rebase, coloca los cambios realizados (o lo que tienes en la rama fix), al final de la rama de la cual partiste.
 Entonces, podes tener en fix 3 commits, y en la rama de la cual partiste tenes 4 nuevos commits. Cuando realizas el rebase
 los 3 commits de fix van a ir al final de la rama origen (de la cual partiste).
+
+## PRIMERO SE LE HACE EL REBASE A LA RAMA QUE VA A DESAPARECER DE LA HISTORIA (FIX) Y DESPUES A LA RAMA PRINCIPAL
+## REBASE PRIMERO A DND HUBO LOS CAMBIOS QUE QUEREMOS MODIFICAR Y LUEGO REBASE A LA RAMA FINAL.
 
 
